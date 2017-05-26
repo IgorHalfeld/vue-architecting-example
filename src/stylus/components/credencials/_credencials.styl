@@ -1,0 +1,49 @@
+.login-area-credencials
+  display flex
+  flex-direction column
+  align-items center
+
+  &-logo
+    width 300px
+
+  &-group
+    display flex
+    justify-content center
+    align-items center
+    width 300px
+
+    > .login-icon-user
+      font-size 20px
+      background-color $color-gray
+      color $color-tertinary
+      padding 12.5px 13px 12.5px 13px
+
+    > .login-icon-password
+      font-size 20px
+      background-color $color-gray
+      color $color-tertinary
+      padding 12.5px 16.5px 12.5px 16.5px
+
+    &-user
+      margin-left 0
+      padding-left 0
+      @extend $input-value
+
+    &-password
+      margin-left 0
+      padding-left 0
+      @extend $input-value
+
+  &-button
+    @extend $button-primary
+
+  &-forgotpassword
+    padding 20px
+    color $color-tertinary
+
+    > a
+      text-decoration none
+      color $color-secondary
+
+      &:hover
+        text-decoration underline

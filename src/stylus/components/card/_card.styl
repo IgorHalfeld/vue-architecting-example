@@ -1,0 +1,51 @@
+.card
+  position relative
+  margin-top 15px
+  margin-bottom 15px
+  transition all .2s ease-in-out
+
+  &:hover
+    box-shadow 0rem 0.5rem 1rem 0.5rem $color-gray
+    transform translate3d(0, -0.1rem, 0)
+
+.new-service-icon-box
+  position absolute
+  left 43.5%
+  bottom -15px
+  padding 10px 10px 11px 12px
+  border-radius 50%
+  box-shadow 0rem 0.3rem 1rem $color-tertinary
+  background-color $color-secondary
+  cursor pointer
+
+  .new-service-icon
+    font-size 1rem
+    color $color-white
+
+.new-service-container-cards-card
+  display flex
+  flex-direction column
+  jusitfy-content center
+  align-items center
+  width 200px
+
+  > .card-title
+    font-size 1.4rem
+    color $color-black
+
+  > .card-description
+    margin-top 7px
+    margin-bottom 15px
+    font-size 1rem
+    color $color-tertinary
+    text-align center
+
+  > .card-icon-box
+    display flex
+    align-items center
+
+    > .card-icon
+      width 100%
+      padding 25px
+      font-size 5rem
+      color $color-tertinary

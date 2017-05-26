@@ -1,0 +1,43 @@
+
+
+.breadcrumb
+  display inline-flex
+  white-space nowrap
+  margin 100px
+
+  &:last-child
+    color $color-tertinary
+
+  &-item
+    position relative
+    padding 0 10px
+
+    &::before,
+    &::after
+      border-right 1px solid $color-tertinary
+      content ''
+      display block
+      height 50%
+      position absolute
+      left 0
+      right 0
+      top 1.5px
+      z-index -1
+      transform skewX(45deg)
+
+    &::after
+      bottom -1.5px
+      top auto
+      transform skewX(-45deg)
+
+    &:last-of-type::before,
+    &:last-of-type::after
+      display none
+
+    > a
+      text-decoration none
+      font-weight 700
+      color $color-primary
+
+      &:hover
+        text-decoration underline

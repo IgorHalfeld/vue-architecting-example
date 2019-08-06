@@ -1,4 +1,4 @@
-## Example Vue.js architecting app
+## DON'T USE. Use this [example](https://github.com/NOALVO/vue-architecture-boilerplate)
 
 > This project is a `initial commit` from the startup that I work
 
